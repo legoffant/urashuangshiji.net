@@ -1,0 +1,32 @@
+/*header style*/
+header {
+   text-align: center; 
+   padding: 20px;
+   color: #08001A;
+   background-color: #99DDFF;
+   font-family: Consolas,monaco,monospace;
+}
+
+body {
+   font-family: Consolas,monaco,monospace;
+   color: #99DDFF;
+   background-color: #08001A;
+   background-image: radial-gradient(circle, rgba(33,97,110,1) 0%, rgba(3,7,61,1) 84%, rgba(2,0,36,1) 95%);
+   height: 100vh;
+   text-shadow: 0 0 5px #C8C8C8;
+   &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(black, 0.15),
+      rgba(black, 0.15) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+  }
+}
